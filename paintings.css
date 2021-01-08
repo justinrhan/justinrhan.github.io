@@ -1,0 +1,169 @@
+.titleofpage{
+  font-family: 'Lora', serif;
+  font-size: 20pt;
+  color:salmon;
+}
+
+.grid-container {
+  border:none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
+  padding: 8px;
+}
+
+*:not(ul):not(.hover-image){
+  background-color: #e2e2e2;
+  cursor: crosshair;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  text-align:center;
+  position: relative;
+  margin: auto;
+}
+
+.mySlidesA {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: 5px;
+  padding: 3px;
+  color: salmon;
+  font-weight: bold;
+  font-size: 13px;
+  transition: .1s ease;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: salmon;
+  font-size: 12px;
+  padding-top: 10px;
+  position: relative;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+a {
+  height: inherit;
+  background-color: #e1eaea;
+  color:salmon;
+  text-decoration: none;
+  outline-style: dotted;
+  outline-color: salmon;
+  outline-width: thin;
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 10pt;
+  color: slategray;
+}
+
+.nav {
+  font-family: 'Lora', serif;
+  color: salmon;
+  font-size: 14pt;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  padding: 14px;
+  justify-content:space-evenly;
+  list-style-type: none;
+}
+
+a.ul:link{
+  color:salmon;
+  text-decoration: none;
+  outline-style: dotted;
+  outline-color: salmon;
+  outline-width: thin;
+}
+
+a:visited {
+  color:salmon;
+  text-decoration: none;
+  background-color: none;
+}
+
+a:hover:not(.tooltip){
+  color:salmon;
+  text-decoration: none;
+  font-style:italic;
+  background-color: slategray;
+}
+
+/* Dropup Button */
+.dropbtn {
+ color: inherit;
+ font-family: inherit;
+ font-size: inherit;
+ border: inherit;
+}
+
+/* The container <div> - needed to position the dropup content */
+.dropup {
+ position: relative;
+ display: inline-block;
+ color: inherit;
+}
+
+/* Dropup content (Hidden by Default) */
+.dropup-content {
+ display: none;
+ position: absolute;
+ text-align: center;
+ bottom: 26px;
+ min-width: 120px;
+ z-index: 1;
+}
+
+/* Links inside the dropup */
+.dropup-content a {
+ color: inherit;
+ padding: 6px 6px;
+ text-decoration: none;
+ display: block;
+}
+
+/* Show the dropup menu on hover */
+.dropup:hover .dropup-content {
+ display: block;
+}
