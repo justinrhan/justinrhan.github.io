@@ -1,0 +1,176 @@
+.grid-container {
+  border:none;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  padding: 12px;
+}
+
+.flex-container {
+  display: flex;
+  flex-flow:row wrap;
+  justify-content:left;
+  align-items: stretch;/*(vertical alignment)*/
+   /*align-content: space between multiple lines*/
+  align-content: stretch;
+  max-width: 80vw;
+  font-family:'Lora', serif;
+  font-size:9pt;
+  font-weight: bold;
+  bottom:0;
+  color:salmon;
+  padding-left: 150px;
+}
+
+.flex-item {
+  height:auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-bottom: 25px;
+  padding-right: 3px;
+  padding-left: 9px;
+  border-bottom-color: salmon;
+  border-bottom: thin salmon 3px;
+  border-bottom-width: thick;:
+}
+
+a {
+  height: inherit;
+  background-color: #e8f0f9;
+  color:salmon;
+  text-decoration: none;
+  outline-style: dotted;
+  outline-color: salmon;
+  outline-width: thin;
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 10pt;
+  color: slategray;
+}
+
+.nav {
+  font-family: 'Lora', serif;
+  color: salmon;
+  font-size: 16pt;
+  display: flex;
+  position: sticky;
+  bottom: 0;
+  padding: 15px;
+  justify-content:space-evenly;
+  list-style-type: none;
+}
+
+a.ul:link{
+  color:salmon;
+  text-decoration: none;
+  outline-style: dotted;
+  outline-color: salmon;
+  outline-width: thin;
+}
+
+a:visited {
+  color:salmon;
+  text-decoration: none;
+  background-color: none;
+}
+
+a:hover:not(.tooltip):not(.carousel-control-prev):not(.carousel-control-next){
+  color:salmon;
+  text-decoration: none;
+  font-style:italic;
+  background-color: slategray;
+}
+
+.titleofpage{
+  font-family: 'Lora', serif;
+  font-size: 20pt;
+  color:salmon;
+}
+
+
+.tooltip {
+  position: relative;
+  display: flex;
+  /*border-bottom: 1px dotted black;*/ /* If you want dots under the hoverable text */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: none;
+  color: salmon;
+  text-align: left;
+  font-weight: lighter;
+  padding: 5px 0;
+  border-radius: 0px;
+
+  /* Position the tooltip text - see examples below! */
+  position: fixed;
+  top: 50%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.modal {
+  background-color: rgba(232, 240, 249, .85);
+
+}
+
+/* makes landscape images fit modal */
+.modal-dialog {
+    height:auto;
+}
+
+.modal-content {
+  background-color:transparent;
+  padding-top:0;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border:0;
+  max-height:900px;
+}
+
+.modal-header {
+  padding-top:0;
+  height:0px;
+  border-bottom: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.modal-footer {
+  border-top: 0px;
+  border-bottom-right-radius: 0rem;
+  border-bottom-left-radius: 0rem;
+  }
+
+.carousel-control-next {
+  background-color:transparent;
+  background-image:none !important;
+  filter:none !important;
+  color:transparent;
+  outline:none;
+  opacity:1;
+}
+
+.carousel-control-prev {
+  background-color:transparent;
+  color:transparent;
+  outline:none;
+  opacity:0;
+}
+
+.carousel-item {
+  font-family:'Lora', serif;
+  color:salmon;
+}
