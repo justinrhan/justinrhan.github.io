@@ -1,12 +1,29 @@
+.titleofpage{
+  font-family: 'Lora', serif;
+  font-size: 17pt;
+  color:salmon;
+  padding-top: 30px;
+  top: 0;
+  left: 0;
+  width: 15%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content:flex-end;
+  list-style-type:none;
+  background-color: none;
+}
+
 .grid-container {
   border:none;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
   padding: 8px;
+  padding-bottom: 120px;
 }
 
-*:not(ul):not(.hover-image){
+*:not(ul):not(.titleofpage){
   background-color: #f5f5f5;
   cursor: crosshair;
 }
@@ -14,13 +31,14 @@
 .nav {
   font-family: 'Lora', serif;
   color: salmon;
-  font-size: 14pt;
+  font-size: 12pt;
   display: flex;
   position: sticky;
   bottom: 0;
-  padding: 14px;
-  justify-content:space-evenly;
-  list-style-type: none;
+  padding: 10px;
+  padding-left: 50px;
+  justify-content: space-around;
+  list-style-type: decimal-leading-zero;
 }
 
 a {
@@ -35,6 +53,7 @@ a:link {
   outline-style: dotted;
   outline-color: salmon;
   outline-width: thin;
+
 }
 a:visited {
   color:salmon;
@@ -48,21 +67,31 @@ a:hover {
   background-color: slategray;
 }
 
-.titleofpage{
-  font-family: 'Lora', serif;
-  font-size: 20pt;
-  color:salmon;
-}
 
-.item8 {
+
+.item1 {
   display: grid;
-  grid-column: 2 / 6;
+  grid-column: 3/7;
   padding: 10px;
-  border-style: solid;
-  border-width: .5px;
-  border-color:salmon;
 }
 
+.item2 {
+  display: grid;
+  grid-column: 4/7;
+  padding: 10px;
+}
+
+.item3 {
+  display: grid;
+  grid-column: 2/6;
+  padding: 10px;
+}
+
+.item4 {
+  display: grid;
+  grid-column: 2/5;
+  padding: 10px;
+}
 
 .hover-title {
     display: inline;
@@ -76,7 +105,11 @@ a:hover {
  font-family: inherit;
  font-size: inherit;
  border: inherit;
+ border-bottom:solid;
+ border-width: 3px;
+ border-color: salmon;
 }
+
 
 /* The container <div> - needed to position the dropup content */
 .dropup {
@@ -90,7 +123,7 @@ a:hover {
  display: none;
  position: absolute;
  text-align: center;
- bottom: 26px;
+ bottom: 20px;
  min-width: 120px;
  z-index: 1;
 }

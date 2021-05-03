@@ -3,17 +3,35 @@
   <head>
     <link rel="stylesheet" href="paintings.css"/>
       <title> Paintings 2018-19</title>
+          <div class="titleofpage">
+              <a href="index.html" style="border-bottom:solid 3px salmon">Justin R. Han</a>
+          </div>
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
   </head>
+
   <body>
-    <div class="grid-container">
-       <div class="item1"></div><div class="item2"></div><div class="item3"></div><div class="item4"></div>
-       <div class="item5"></div><div class="item6"><div class="titleofpage"><a href="index.html">JUSTIN R. HAN</a></div></div>
-    </div>
     <div class="slideshow-container">
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        <br><br>
+
+      <div style="text-align:center; padding:5px; padding-bottom:8px;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7))"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+        <span class="dot" onclick="currentSlide(13)"></span>
+        <span class="dot" onclick="currentSlide(14)"></span>
+      </div>
+
       <div class="mySlides fade">
         <img src="Paintings/2018-19/2.jpg" style="max-height:75vh; width:auto;">
           <div class="text"><i>Koutroulou I,</i> oil on canvas, 24"x34"</div>
@@ -70,12 +88,13 @@
         <img src="Paintings/2018-19/14A.jpg" style="max-height:75vh; width:auto;">
           <div class="text"><i>The Apse,</i> oil on canvas, 8"x12"</div>
       </div>
+
     </div>
-<br>
+
 <ul class="nav">
     <li>
       <div class="dropup">
-        <a class="dropbtn">PAINTINGS</a>
+        <a class="dropbtn">Paintings</a>
         <div class="dropup-content">
          <a href="paintings 2018-19.html">2018-2019</a>
          <a href="paintings 2020.html">2020</a>
@@ -84,7 +103,7 @@
     </li>
     <li>
       <div class="dropup">
-        <a class="dropbtn">DRAWINGS</a>
+        <a class="dropbtn">Drawings</a>
         <div class="dropup-content">
          <a href="drawings 2018.html">2018</a>
          <a href="drawings 2019.html">2019</a>
@@ -94,13 +113,13 @@
     </li>
     <li>
       <div class="dropup">
-        <a class="dropbtn">BESIDES</a>
+        <a class="dropbtn">Besides</a>
         <div class="dropup-content">
          <a href="besides.html">2018-20</a>
        </div>
      </div>
     </li>
-    <li><a href="Info.html">INFO</a></li>
+    <li><a href="Info.html">Info</a></li>
 </ul>
 
 <script src="scripts/main.js"></script>
