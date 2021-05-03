@@ -41,6 +41,28 @@
   list-style-type: decimal-leading-zero;
 }
 
+.body {
+    font-family: 'Lora', serif;
+    color: salmon;
+    font-size: 10pt;
+    display: flex;
+    position: inherit;
+    bottom: 0;
+    padding-top: 90px;
+    text-align: justify;
+    display: grid;
+    grid-column: 2/5;
+  }
+}
+
+.pic {
+    display: flex;
+    position: inherit;
+    justify-content: auto;
+    display: grid;
+  }
+}
+
 a {
   outline-style: dotted;
   outline-color: salmon;
@@ -83,7 +105,7 @@ a:hover {
 
 .item3 {
   display: grid;
-  grid-column: 2/6;
+  grid-column: 2/5;
   padding: 10px;
 }
 
