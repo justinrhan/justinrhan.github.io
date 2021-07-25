@@ -14,6 +14,17 @@
   background-color: none;
 }
 
+.bio {
+  font-family: 'Lora', serif;
+  color: salmon;
+  font-size: 10pt;
+  text-align: justify;
+  display: grid;
+  grid-column: 2/4;
+  min-height: 100vh;
+  padding-top:20vh;
+}
+
 .grid-container {
   border:none;
   display: grid;
@@ -52,6 +63,7 @@
     text-align: justify;
     display: grid;
     grid-column: 2/5;
+    min-height: 100vh;
 }
 
 .pic {
