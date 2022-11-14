@@ -68,7 +68,7 @@ a:hover {
 .slideshow-container {
   text-align: center;
   position: static;
-  padding-top:;
+  padding-top:10px;
   height: 100%;
 }
 
@@ -79,8 +79,8 @@ a:hover {
 /* The dots/bullets/indicators */
 .dot {
   cursor: cell;
-  height: 7px;
-  width: 7px;
+  height: 5px;
+  width: 5px;
   margin: 0 5px;
   background-color: salmon;
   border-radius: 50%;
@@ -98,11 +98,12 @@ a:hover {
 .prev, .next {
   cursor: pointer;
   position: relative;
+  height: 3px;
   width: 5px;
   padding: 3px;
   color: salmon;
   font-weight: bold;
-  font-size: 13px;
+  font-size: 10px;
   transition: .1s ease;
   user-select: none;
 }

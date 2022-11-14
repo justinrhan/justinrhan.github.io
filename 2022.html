@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- Google Tag Manager -->
+
+    <!-- STUFF FOR ANALYTICS: Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -16,10 +17,13 @@
         gtag('js', new Date());
         gtag('config', 'G-6SFFSS05TX');
       </script>
+
       <link rel="stylesheet" href="withslides.css">
           <title> Justin Rui Han</title>
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="arrowscroll.js" defer></script>
 
   </head>
   <body>
@@ -28,11 +32,45 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div class="slideshow-container">
-                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <!-- Website title & homepage link -->
+    <div class="titleofpage">
+         <a href="index.html" style="border-bottom:solid 3px salmon">Justin Rui Han</a></div>
 
+    <!-- Image slideshow -->
+    <div class="slideshow-container">
+
+                      <div class="mySlides fade">
+                        <img src="Drawings/2022/1.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>At Rest (Home Invasion),</i> graphite on paper, 24"x24"</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <img src="Paintings/2022/1.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>At Rest (Home Invasion),</i> oil on canvas, 54"x54"</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <img src="Drawings/2022/2.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>the Gaunt and Pleasure-Seeking,</i> graphite on paper, 18"x18"</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <img src="Paintings/2022/2.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>the Gaunt and Pleasure-Seeking,</i> oil on canvas, 60"x60"</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <img src="Other/2022/1.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>Kendi (A),</i> kiln-formed glass, 9.5"x11"</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <img src="Other/2022/2.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>Kendi (B),</i> kiln-formed glass, 9.5"x11"</div>
+                      </div>
+                      <div class="mySlides fade">
+                        <img src="Other/2022/3.jpg" style="max-height:87vh; width:auto;">
+                          <div class="text"><i>Untitled,</i> kiln-formed glass, 8"x10"</div>
+                      </div>
+                      
+                
                       <div style="text-align:center; padding:10px; padding-bottom:10px;">
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                         <span class="dot" onclick="currentSlide(1)"></span>
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
@@ -40,42 +78,32 @@
                         <span class="dot" onclick="currentSlide(5)"></span>
                         <span class="dot" onclick="currentSlide(6)"></span>
                         <span class="dot" onclick="currentSlide(7)"></span>
-                      </div>
-
-                      <div class="mySlides fade">
-                        <img src="Drawings/2022/1.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>At Rest (Home Invasion),</i> graphite on paper, 24"x24"</div>
-                      </div>
-                      <div class="mySlides fade">
-                        <img src="Paintings/2022/1.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>At Rest (Home Invasion),</i> oil on canvas, 54"x54"</div>
-                      </div>
-                      <div class="mySlides fade">
-                        <img src="Drawings/2022/2.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>the Gaunt and Pleasure-Seeking,</i> graphite on paper, 18"x18"</div>
-                      </div>
-                      <div class="mySlides fade">
-                        <img src="Paintings/2022/2.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>the Gaunt and Pleasure-Seeking,</i> oil on canvas, 60"x60"</div>
-                      </div>
-                      <div class="mySlides fade">
-                        <img src="Other/2022/1.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>Kendi (A),</i> kiln-formed glass, 9.5"x11"</div>
-                      </div>
-                      <div class="mySlides fade">
-                        <img src="Other/2022/2.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>Kendi (B),</i> kiln-formed glass, 9.5"x11"</div>
-                      </div>
-                      <div class="mySlides fade">
-                        <img src="Other/2022/3.jpg" style="max-height:85vh; width:auto;">
-                          <div class="text"><i>Untitled,</i> kiln-formed glass, 8"x10"</div>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
                       </div>
 
       </div>
+      
+      <!--script for left/right arrow keys to trigger shifting between images, linked to main.js; copy to all pages
+        solution found @https://www.reddit.com/r/learnjavascript/comments/jsluet/use_left_right_keyboard_arrows_to_change_image_in/-->
 
-    <div class="titleofpage">
-         <a href="index.html" style="border-bottom:solid 3px salmon">Justin Rui Han</a></div>
+      <script> 
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+              }
 
+                  document.onkeydown = function(e) {
+                      e = e || window.event;
+                      if (e.keyCode == '37') {
+                          plusSlides(-1) //left <- show Prev image
+                      } else if (e.keyCode == '39') {
+                          // right -> show next image
+                          plusSlides(1)
+                      }
+          }
+      </script>
+
+
+      <!-- navigation menu -->
     <ul class="nav">
         <li>
           <a href="2022.html">2022</a>
