@@ -188,7 +188,7 @@ a:hover {
   color: white;
 } 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 500px) {
     .nav{
         display: none;
     }
@@ -197,7 +197,7 @@ a:hover {
     }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 500px) {
   .topnav{
         display:none;
     }
