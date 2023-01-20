@@ -36,55 +36,73 @@
     <div class="titleofpage">
          <a href="index.html" style="border-bottom:solid 3px salmon">Justin Rui Han</a></div>
 
+    <!-- mobile navigation menu -->
+    <div class="topnav">
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <span href="#home" class="active"><a href="index.html" style="padding: 10px">Justin Rui Han<a></span>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="2022.html">2022</a>
+        <a href="2021.html">2021</a>
+        <a href="2020.html">2020</a>
+        <a href="info.html">Info</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> 
+
     <!-- Image slideshow -->
     <div class="slideshow-container">
 
-                      <div class="mySlides fade">
-                        <img src="Paintings/2022/4.jpg" style="max-height:87vh; width:auto;">
+                     <!-- <div class="mySlides fade">
+                        <img src="Paintings/2022/4.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Risk and Sanctuary,</i> oil on canvas, 40"x50"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Paintings/2022/5.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Paintings/2022/5.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Prize-Fighters,</i> oil on canvas, 40"x50"</div>
-                      </div>
+                      </div> -->
                       <div class="mySlides fade">
-                        <img src="Paintings/2022/3.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Paintings/2022/3.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Linguere's Courtyard,</i> oil on canvas, 24"x26"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Drawings/2022/1.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Drawings/2022/1.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>At Rest (Home Invasion),</i> graphite on paper, 24"x24"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Paintings/2022/1.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Paintings/2022/1.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>At Rest (Home Invasion),</i> oil on canvas, 54"x54"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Drawings/2022/2.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Drawings/2022/2.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>the Gaunt and Pleasure-Seeking,</i> graphite on paper, 18"x18"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Paintings/2022/2.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Paintings/2022/2.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>the Gaunt and Pleasure-Seeking,</i> oil on canvas, 60"x60"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Drawings/2022/3.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Drawings/2022/3.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Patrolling,</i> soft pastel and colored pencil on paper, 18"x24"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Drawings/2022/4.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Drawings/2022/4.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Prize-Fighters,</i> soft pastel and colored pencil on paper, 22"x30"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Other/2022/1.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Other/2022/1.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Kendi (A),</i> kiln-formed glass, 9.5"x11"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Other/2022/2.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Other/2022/2.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Kendi (B),</i> kiln-formed glass, 9.5"x11"</div>
                       </div>
                       <div class="mySlides fade">
-                        <img src="Other/2022/3.jpg" style="max-height:87vh; width:auto;">
+                        <img src="Other/2022/3.jpg" style="max-height:87vh; max-width:100%;">
                           <div class="text"><i>Untitled,</i> kiln-formed glass, 8"x10"</div>
                       </div>
                     
@@ -100,8 +118,8 @@
                         <span class="dot" onclick="currentSlide(8)"></span>
                         <span class="dot" onclick="currentSlide(9)"></span>
                         <span class="dot" onclick="currentSlide(10)"></span>
-                        <span class="dot" onclick="currentSlide(11)"></span>
-                        <span class="dot" onclick="currentSlide(12)"></span>
+                        <!--<span class="dot" onclick="currentSlide(11)"></span>
+                        <span class="dot" onclick="currentSlide(12)"></span> -->
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                       </div>
 
@@ -138,12 +156,18 @@
         <li>
           <a href="2020.html">2020</a>
         </li>
+        <br>
         <li>
-          <a href="2019.html">2019</a>
-        </li><br>
-        <li>
-          <a href="archive.html">Archive</a>
-       </li>
+          <a>
+            <div class="dropdown">Archive
+              <div class="dropdown-content">
+                <a href="2019.html">2019</a><br>
+                <a href="2018.html">2018</a>
+              </div>
+            </div>
+          </a>
+        </li>
+
         <li>
           <a href="info.html">Info</a>
         </li>

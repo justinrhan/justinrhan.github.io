@@ -18,11 +18,13 @@
       </script>
       <link rel="stylesheet" href="index.css">
       <title> Justin Rui Han</title>
+
       <div class="titleofpage">
-             <a href="index.html" style="border-bottom:solid 3px salmon">Justin Rui Han</a></div>
+             <a href="index.html" style="border-bottom:solid 3px salmon">Justin Rui Han</a>
+      </div>
+
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
       <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
@@ -30,31 +32,53 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- mobile navigation menu -->
+      <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="topnav">
+      <span href="#home" class="active"><a href="index.html" style="padding: 10px">Justin Rui Han<a></span>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="2022.html">2022</a>
+        <a href="2021.html">2021</a>
+        <a href="2020.html">2020</a>
+        <a href="info.html">Info</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div> 
+
+    <!-- desktop navigation menu-->
     <ul class="nav">
         <li>
           <a href="2022.html">2022</a>
         </li>
         <li>
-            <a href="2021.html">2021</a>
+          <a href="2021.html">2021</a>
         </li>
         <li>
           <a href="2020.html">2020</a>
+        </li><br>
+        <li>
+          <a>
+            <div class="dropdown">Archive
+              <div class="dropdown-content">
+                <a href="2019.html">2019</a><br>
+                <a href="2018.html">2018</a>
+              </div>
+            </div>
+          </a>
         </li>
-        <li>
-          <a href="2019.html">2019</a>
-        </li> <br>
-        <li>
-          <a href="archive.html">Archive</a>
-       </li>
         <li>
           <a href="info.html">Info</a>
         </li>
     </ul>
 
-      <div class="grid-container">
-           <div class="item6">
-              <img src="Paintings/2021/1crop.jpg" width=45% style="padding-left: 26vw; border-width:0px; border-color:salmon">
-          </div>
+    <!--central image-->
+      <div class="mainimage">
+        <img src="Paintings/2021/1crop.jpg" style="display: block; margin-left: auto; margin-right: auto;max-width:100%; max-height:95vh; height:auto; padding-top:10px;">        
       </div>
 
      <script src="scripts/main.js"></script>
