@@ -1,4 +1,20 @@
-
+.nav {
+  font-family: 'Lora', serif;
+  color: salmon;
+  font-size: 14pt;
+  background-color: none;
+  display: list-item;
+  text-align: left;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  top:50px;
+  padding: 50px;
+  width: 10%;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
 
 .titleofpage{
   font-family: 'Lora', serif;
@@ -14,6 +30,15 @@
   justify-content:center;
   list-style-type:none;
   background-color:none;
+}
+
+@media screen and (max-width: 480px) {
+    .nav{
+        display: none;
+    }
+    .titleofpage{
+        display:none;
+    }
 }
 
 .dropdown {
@@ -34,23 +59,6 @@
   display: block;
 }
 
-.nav {
-  font-family: 'Lora', serif;
-  color: salmon;
-  font-size: 14pt;
-  background-color: none;
-  display: list-item;
-  text-align: left;
-  justify-content: flex-start;
-  list-style-type: none;
-  margin: 0;
-  top:50px;
-  padding: 50px;
-  width: 10%;
-  height: 100%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
 
 a {
   outline-style: dotted;
@@ -201,15 +209,6 @@ a:hover {
   background-color: none;
   color: white;
 } 
-
-@media screen and (max-width: 480px) {
-    .nav{
-        display: none;
-    }
-    .titleofpage{
-        display:none;
-    }
-}
 
 @media screen and (min-width: 480px) {
   .topnav{

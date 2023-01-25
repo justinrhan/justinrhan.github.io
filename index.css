@@ -14,16 +14,6 @@
   background-color:none;
 }
 
-.bio {
-  font-family: 'Lora', serif;
-  color: salmon;
-  font-size: 13pt;
-  display: grid;
-  max-width: 80vw;
-  padding-left: 14vw;
-  padding-top: 8vh;
-}
-
 .nav {
   font-family: 'Lora', serif;
   color: salmon;
@@ -40,6 +30,25 @@
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+@media screen and (max-width: 480px) {
+    .nav{
+        display: none;
+    }
+    .titleofpage{
+        display:none;
+    }
+}
+
+.bio {
+  font-family: 'Lora', serif;
+  color: salmon;
+  font-size: 13pt;
+  display: grid;
+  max-width: 80vw;
+  padding-left: 14vw;
+  padding-top: 8vh;
 }
 
 .dropdown {
@@ -182,23 +191,18 @@ a:hover {
   top: 0;
 }
 
+@media screen and (min-width: 480px) {
+  .topnav{
+        display:none;
+    }
+}
+
 /* Style the active link (or home/logo) */
 .active {
   background-color: none;
   color: white;
 } 
 
-@media screen and (max-width: 500px) {
-    .nav{
-        display: none;
-    }
-    .titleofpage{
-        display:none;
-    }
-}
 
-@media screen and (min-width: 500px) {
-  .topnav{
-        display:none;
-    }
-}
+
+
