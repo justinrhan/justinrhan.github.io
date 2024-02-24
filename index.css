@@ -1,7 +1,7 @@
 .titleofpage{
   font-family: 'Lora', serif;
   font-size: 17pt;
-  color:salmon;
+  color:darkslategray;
   padding-top: 30px;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
 
 .nav {
   font-family: 'Lora', serif;
-  color: salmon;
+  color:darkslategray;
   font-size: 14pt;
   background-color: none;
   display: list-item;
@@ -44,7 +44,7 @@
 .bio {
   justify-content: center;
   font-family: 'Lora', serif;
-  color: salmon;
+  color: darkslategray;
   font-size: 13pt;
   display: grid;
   max-width: 90vw;
@@ -72,7 +72,7 @@
 
 .body {
     font-family: 'Lora', serif;
-    color: salmon;
+    color: darkslategray;
     font-size: 10pt;
     display: flex;
     position: inherit;
@@ -87,26 +87,26 @@
 
 a {
   outline-style: dotted;
-  outline-color: salmon;
+  outline-color: darkslategray;
   outline-width: thin;
 }
 
 a:link {
-  color:salmon;
+  color:darkslategray;
   text-decoration: none;
   outline-style: dotted;
-  outline-color: salmon;
+  outline-color: darkslategray;
   outline-width: thin;
 
 }
 a:visited {
-  color:salmon;
+  color:darkslategray;
   text-decoration: none;
   background-color: none;
 }
 
 a:hover {
-  color:salmon;
+  color:darkslategray;
   text-decoration: none;
   font-style:italic;
   background-color: slategray;
@@ -126,7 +126,7 @@ a:hover {
  border: inherit;
  border-bottom:solid;
  border-width: 3px;
- border-color: salmon;
+ border-color: darkslategray;
 }
 
 /* The container <div> - needed to position the dropup content */
@@ -185,7 +185,7 @@ a:hover {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  color:salmon;
+  color:darkslategray;
   display: block;
   position: absolute;
   right: 0;

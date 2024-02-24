@@ -1,6 +1,6 @@
 .nav {
   font-family: 'Lora', serif;
-  color: salmon;
+  color: darkslategray;
   font-size: 14pt;
   background-color: none;
   display: list-item;
@@ -19,7 +19,7 @@
 .titleofpage{
   font-family: 'Lora', serif;
   font-size: 17pt;
-  color:salmon;
+  color:darkslategray;
   padding-top: 30px;
   top: 0;
   left: 0;
@@ -62,26 +62,26 @@
 
 a {
   outline-style: dotted;
-  outline-color: salmon;
+  outline-color: darkslategray;
   outline-width: thin;
 }
 
 a:link {
-  color:salmon;
+  color:darkslategray;
   text-decoration: none;
   outline-style: dotted;
-  outline-color: salmon;
+  outline-color: darkslategray;
   outline-width: thin;
 }
 
 a:visited {
-  color:salmon;
+  color:darkslategray;
   text-decoration: none;
   background-color: none;
 }
 
 a:hover {
-  color:salmon;
+  color:darkslategray;
   text-decoration: none;
   font-style:italic;
   background-color: slategray;
@@ -110,7 +110,7 @@ a:hover {
   height: 5px;
   width: 5px;
   margin: 0 5px;
-  background-color: salmon;
+  background-color: darkslategray;
   border-radius: 50%;
   display: inline-block;
   transition: #717171 0.4s ease;
@@ -129,7 +129,7 @@ a:hover {
   height: 3px;
   width: 5px;
   padding: 3px;
-  color: salmon;
+  color: darkslategray;
   font-weight: bold;
   font-size: 10px;
   transition: .1s ease;
@@ -149,7 +149,7 @@ a:hover {
 
 /* Caption text */
 .text {
-  color: salmon;
+  color: darkslategray;
   font-size: 16px;
   padding-top: 10px;
   position: relative;
@@ -197,7 +197,7 @@ a:hover {
 
 /* Style the hamburger menu */
 .topnav a.icon {
-  color:salmon;
+  color:darkslategray;
   display: block;
   position: absolute;
   right: 0;
