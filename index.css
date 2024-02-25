@@ -42,14 +42,14 @@
 }
 
 .bio {
-  justify-content: center;
+  justify-content: left;
   font-family: 'Lora', serif;
   color: darkslategray;
   font-size: 13pt;
   display: grid;
   max-width: 90vw;
   padding-top: 8vh;
-  padding-left:3vw;
+  padding-left:14vw;
 }
 
 .dropdown {
