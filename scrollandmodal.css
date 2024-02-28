@@ -175,7 +175,7 @@ a:hover {
   height:75vh;
   padding-right:5vw;
   object-fit: cover;
-  cursor: nesw-resize;
+  cursor: url('data:image/png;base64,R0lGODlhFQAVAIAAAGOjoy0tNSH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFQAVAAACJYyPqcvtD2MClMpTwcV26y5phhiR3oZdpAlZbAuqFZq96I3nWwEAOw=='), auto;
 }
 
 @media only screen and (min-width: 768px) {
@@ -191,11 +191,14 @@ a:hover {
 .slideshow-container {
   text-align: center;
   position: static;
-  padding-top:10px;;
+  padding-top:10px;
+
+
 }
 
 .mySlides {
  height:94vh;
+ cursor: url('data:image/png;base64,R0lGODlhFgAWAIAAAGmOjjAwNiH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFgAWAAACHYyPqcvtD6OctNoLrgEZc8aF4thRoaeV2sq27tsWADs='), auto;
 }
 
 /* The dots/bullets/indicators */
