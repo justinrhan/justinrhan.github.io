@@ -305,6 +305,11 @@ a:hover {
   color: white;
 } 
 
+.photocredit {
+  padding-left:14vw;
+  padding-top:1vh;
+}
+
 @media screen and (min-width: 480px) {
   .topnav{
         display:none;
