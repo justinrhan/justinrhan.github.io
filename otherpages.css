@@ -214,6 +214,10 @@ a:hover {
   a:visited{
     outline-style: none;
   }
+  .bio{
+    padding-left:2vw;
+    padding-top:2vh;
+  }
 }
 
 
