@@ -1,0 +1,359 @@
+.nav {
+  font-family: 'Lora', serif;
+  color: darkslategray;
+  font-size: 14pt;
+  background-color: none;
+  display: list-item;
+  text-align: left;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  top:50px;
+  padding: 50px;
+  width: 10%;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+.titleofpage{
+  font-family: 'Lora', serif;
+  font-size: 17pt;
+  color:darkslategray;
+  padding-top: 30px;
+  top: 0;
+  left: 0;
+  width: 15%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  justify-content:center;
+  list-style-type:none;
+  background-color:none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 0px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  margin: auto;
+  padding: 0;
+  padding-left: 0;
+  width: auto;
+  max-width: 95%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  padding: 0px 0px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+a {
+  outline-style: dotted;
+  outline-color: darkslategray;
+  outline-width: thin;
+}
+
+a:link {
+  color:darkslategray;
+  text-decoration: none;
+  outline-style: dotted;
+  outline-color: darkslategray;
+  outline-width: thin;
+}
+
+a:visited {
+  color:darkslategray;
+  text-decoration: none;
+  background-color: none;
+}
+
+a:hover {
+  color:darkslategray;
+  text-decoration: none;
+  font-style:italic;
+  background-color: slategray;
+}
+
+.hover-title {
+    display: inline;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 10px rgba(44, 51, 82, 0.91); 
+    border-radius: 2px;
+    opacity:25%;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 6px rgba(44, 51, 82, 0.91); 
+    opacity:50%;
+}
+
+
+/* The Close Button */
+.close {
+  color: darkslategray;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.image-gallery {
+  /* Mobile first */
+  display: flex;
+  flex-direction: row;
+  padding-left:14vw;
+  padding-top:11vh;
+  padding-right:4vw;
+}
+
+.mobile-image-gallery {
+  padding-top:3vh; 
+}
+
+.mobile-image-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 2vh;
+  object-fit: cover;
+  text-align:center;
+  overflow:hidden; 
+}
+
+.image-gallery .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  padding-bottom:30px;
+}
+
+.image-item img {
+  height:75vh;
+  padding-right:2vw;
+  object-fit: cover;
+  cursor: url('data:image/png;base64,R0lGODlhFQAVAIAAAGOjoy0tNSH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFQAVAAACJYyPqcvtD2MClMpTwcV26y5phhiR3oZdpAlZbAuqFZq96I3nWwEAOw=='), auto;
+}
+
+.slideshow-container {
+  text-align: center;
+  position: static;
+  padding-top:10px;
+}
+
+.mySlides {
+ height:94vh;
+ cursor: url('data:image/png;base64,R0lGODlhFgAWAIAAAGmOjjAwNiH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFgAWAAACHYyPqcvtD6OctNoLrgEZc8aF4thRoaeV2sq27tsWADs='), auto;
+}
+
+@media screen and (max-width: 920px) {
+  .row{
+    height:80vh;
+  }
+  .image-gallery{
+    display:none;
+    padding-left:0vw;
+    padding-right:0vw;
+    padding-bottom:0vh;
+    padding-top:0vh;
+    overflow:hidden;
+  }
+  .mySlides{
+    width:95vw;
+    padding-left:0vw;
+    padding-right:0vw;
+    padding-top:0vh;
+    align-content: center;
+  }
+  .close{
+    position:absolute;
+    left:3vw;
+    top:2vh;
+  }
+  a {
+    outline-style: none;
+  }
+  a:link{
+    outline-style: none;
+  }
+  a:visited{
+    outline-style: none;
+  }
+  .nav{
+    display: none;
+  } 
+ .titleofpage{
+    display:none;
+  }
+}
+
+@media screen and (min-width: 921px) {
+  .topnav{
+        display:none;
+    }
+   .mobile-image-gallery{
+        display:none;
+   } 
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: cell;
+  height: 5px;
+  width: 5px;
+  margin: 0 7px;
+  background-color: darkslategray;
+  border-radius: 45%;
+  display: inline-block;
+  transition: #717171 0.4s ease;
+  opacity: 50%;
+  padding-bottom: 2px;
+}
+
+.active, .dot:hover {
+  background-color: black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  height: 10px;
+  width: 5px;
+  padding: 3px;
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 10px;
+  transition: .1s ease;
+  background-color: transparent;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: darkslategray;
+  font-size: 13px;
+  padding-top: 15px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ /* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: none;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  display: block;
+  text-align:center;
+  font-size: 16pt;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  color:darkslategray;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: none;
+  color: white;
+} 
+
+.photocredit {
+  padding-left:14vw;
+  padding-top:1vh;
+}
+
+
