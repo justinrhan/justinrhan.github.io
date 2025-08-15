@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/mainindex.css">
+    <link rel="stylesheet" href="css/scrollandmodal.css">
     <title> Justin Rui Han</title>
       <div class="titleofpage">
         <a href="index.html" style="border-bottom:solid 2px darkslategray">Justin Rui Han</a></div>
@@ -23,14 +23,19 @@
   <body>
     <!-- mobile navigation menu -->
       <div class="topnav">
-        <span href="#home" class="active"><a href="index.html" style="padding: 10px">Justin Rui Han<a></span>
+        <span href="#home" class="active"><a href="index.html">Justin Rui Han<a></span>
         <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-          <a href="2024.html">2024-5</a>
-          <a href="2023.html">2023</a>
-          <a href="2021-2.html">2021-2</a><br>
-          <a href="exhibitions.html">Exhibitions</a>
-          <a href="info.html">Info</a>
+        <div id="myLinks" style="color:#80a4ab">
+          <ul>
+            <li>2024 <a href="2024obj.html">Objects</a><br></li>
+            <li>2023 <a href="2023obj.html">Objects</a> /
+                 <a href="2023dra.html">Drawings</a><br></li>
+            <li>2021-2 <a href="2021obj.html">Objects</a> /
+                 <a href="2021dra.html">Drawings</a><br></li>
+         <br>
+           <li><a href="exhibitions.html">Exhibitions</a> /
+              <a href="info.html">Info</a></li>
+          </ul>
         </div>
         <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -40,13 +45,31 @@
     <!-- desktop navigation menu-->
       <ul class="nav">
         <li>
-          <a href="2024.html">2024-5</a>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2024-5</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="2024obj.html">Objects</a><br> 
+                <!--<a href="2024dra.html">Drawings</a>-->
+            </div>
+          </div>
         </li>
         <li>
-          <a href="2023.html">2023</a>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2023</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="2023obj.html">Objects</a><br>
+                <a href="2023dra.html">Drawings</a>
+            </div>
+          </div>
         </li>
         <li>
-          <a href="2021-2.html">2021-2</a>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2021-2</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="2021obj.html">Objects</a><br>
+                <a href="2021dra.html">Drawings</a>
+            </div>
+          </div>
         </li>
       <br>
         <li>

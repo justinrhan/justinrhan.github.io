@@ -8,28 +8,30 @@
   justify-content: flex-start;
   list-style-type: none;
   margin: 0;
-  top:50px;
-  padding: 50px;
+  top:12vh;
+  left:1vw;
+  padding: 0px;
   width: 10%;
   height: 100%; /* Full height */
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
+
 .titleofpage{
   font-family: 'Lora', serif;
-  font-size: 17pt;
+  font-size: 16pt;
   color:darkslategray;
-  padding-top: 30px;
-  top: 0;
-  left: 0;
-  width: 15%;
+  top: 1vh;
+  left: 1vw;
+  width: 10%;
   display: flex;
   position: fixed;
-  top: 0;
-  justify-content:center;
   list-style-type:none;
   background-color:none;
+
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
 
 .modal {
@@ -56,25 +58,50 @@
   max-width: 95%;
 }
 
+.dropbtn {
+  font-family: 'Lora', serif;
+  font-size: 14pt;
+  color:darkslategray;
+  border:none;
+  background-color: #d0e0e3;
+  cursor: ;
+  caret-color: #d0e0e3;
+  outline-style: dotted;
+  outline-color: darkslategray;
+  outline-width: thin;
+}
+
 .dropdown {
-  position: relative;
+  position: static;
   display: inline-block;
+
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: white;
+  position: inherit;
+  right: 0px;
+  width:100%;
+  background-color: transparent;
   min-width: 160px;
   padding: 0px 0px;
-  z-index: 1;
+  padding-left:10px;
+  z-index: 0;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+ul{
+  position: block;
+}
 
+li{
+  list-style-type: none;
+  align-content: center;
+  font-size: 14pt;
+}
 
 a {
   outline-style: dotted;
@@ -101,6 +128,41 @@ a:hover {
   text-decoration: none;
   font-style:italic;
   background-color: slategray;
+}
+
+.bio {
+  justify-content: left;
+  font-family: 'Lora', serif;
+  color: darkslategray;
+  font-size: 11pt;
+  display: grid;
+  max-width: 90vw;
+  padding-top: 10vh;
+  padding-left:16vw;
+}
+
+.exh {
+  position: absolute;
+  left:12vw;
+  right:12vw;
+  padding-top: 11vh;
+  font-family: 'Lora', serif;
+  color: darkslategray;
+  font-size: 11pt;
+  max-width: 90vw;
+  padding-bottom:30px;
+}
+
+
+.exhtext {
+  justify-content: center;
+  font-family: 'Lora', serif;
+  color: darkslategray;
+  font-size: 11pt;
+  display: grid;
+  max-width: 90vw;
+  padding-top: 10vh;
+  padding-left:10vw; 
 }
 
 .hover-title {
@@ -331,7 +393,7 @@ a:hover {
 
 /* Style navigation menu links */
 .topnav a {
-  display: block;
+  display: relative;
   text-align:center;
   font-size: 16pt;
 }
@@ -347,7 +409,7 @@ a:hover {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: none;
+  background-color: transparent;
   color: white;
 } 
 

@@ -79,18 +79,35 @@
   width:auto;
 }
 
+.dropbtn {
+  font-family: 'Lora', serif;
+  font-size: 14pt;
+  color:darkslategray;
+  border:none;
+  background-color: #d0e0e3;
+  cursor: ;
+  caret-color: #d0e0e3;
+  outline-style: dotted;
+  outline-color: darkslategray;
+  outline-width: thin;
+}
+
 .dropdown {
-  position: relative;
+  position: static;
   display: inline-block;
+
 }
 
 .dropdown-content {
   display: none;
-  position: absolute;
-  background-color: white;
+  position: inherit;
+  right: 0px;
+  width:100%;
+  background-color: transparent;
   min-width: 160px;
   padding: 0px 0px;
-  z-index: 1;
+  padding-left:10px;
+  z-index: 0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -149,34 +166,6 @@ a:hover {
     cursor: pointer;
 }
 
-/* Dropup Button */
-.dropbtn {
- color: inherit;
- font-family: inherit;
- font-size: inherit;
- border: inherit;
- border-bottom:solid;
- border-width: 3px;
- border-color: darkslategray;
-}
-
-/* The container <div> - needed to position the dropup content */
-.dropup {
- position: relative;
- display: inline-block;
- color: inherit;
-}
-
-/* Dropup content (Hidden by Default) */
-.dropup-content {
- display: none;
- position: absolute;
- text-align: center;
- bottom: 20px;
- min-width: 120px;
- z-index: 1;
-}
-
 /* Links inside the dropup */
 .dropup-content a {
  color: inherit;
@@ -189,11 +178,6 @@ a:hover {
 .dropup:hover .dropup-content {
  display: block;
 }
-
-
-
-
-
 
  /* Style the navigation menu */
 .topnav {
