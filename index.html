@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="css/scrollandmodal.css">
     <title> Justin Rui Han</title>
       <div class="titleofpage">
-        <a href="index.html" style="border-bottom:solid 2px darkslategray">Justin Rui Han</a></div>
+        <a href="index.html" 
+          onmouseover="this.style.backgroundColor='slategray';this.style.color='#d0e0e3'";
+          onMouseOut="this.style.backgroundColor='#d0e0e3';this.style.color='darkslategray'">Justin Rui Han</a></div>
     <!-- addl stylesheets -->
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
       <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -42,9 +44,10 @@
           <i class="fa fa-bars"></i>
         </a>
       </div> 
-    <!-- desktop navigation menu-->
+    <!-- navigation menu -->
       <ul class="nav">
         <li>
+          <div style="color:darkslategray;font-size:12pt">Work</div><hr style="position:sticky;">
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2024-5</button>
             <div id="myDropdown" class="dropdown-content">
@@ -71,13 +74,16 @@
             </div>
           </div>
         </li>
-      <br>
+      <br><div style="position:fixed; bottom:6vh">
         <li>
-          <a href="exhibitions.html">Exhibitions</a>
+          <a style="font-size:12pt" href="exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="texts.html">Texts</a>
         </li>        
         <li>
-          <a href="info.html">Info</a>
-        </li>
+          <a style="font-size:12pt" href="info.html">Info</a>
+        </li></div>
       </ul>
     <!--central image-->
       <div class="mainimage">

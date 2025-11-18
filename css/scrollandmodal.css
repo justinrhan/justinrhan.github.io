@@ -1,35 +1,27 @@
-.nav {
+.titleofpage{
   font-family: 'Lora', serif;
-  color: darkslategray;
-  font-size: 14pt;
+  font-size: 12pt;
+  color:darkslategray;
+  background-color: #d0e0e3;
+  position: fixed;
+  top:5vh;
+  left: 2vw;
+  display: flex;
+}
+
+
+.nav {
   background-color: none;
   display: list-item;
   text-align: left;
   justify-content: flex-start;
   list-style-type: none;
   margin: 0;
-  top:12vh;
-  left:1vw;
+  top:10vh;
+  left:3vw;
   padding: 0px;
-  width: 10%;
+  width: 10%; 
   height: 100%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
-
-
-.titleofpage{
-  font-family: 'Lora', serif;
-  font-size: 16pt;
-  color:darkslategray;
-  top: 1vh;
-  left: 1vw;
-  width: 10%;
-  display: flex;
-  position: fixed;
-  list-style-type:none;
-  background-color:none;
-
   position: fixed; /* Make it stick, even on scroll */
   overflow: auto; /* Enable scrolling if the sidenav has too much content */
 }
@@ -60,33 +52,23 @@
 
 .dropbtn {
   font-family: 'Lora', serif;
-  font-size: 14pt;
+  font-size: 11pt;
   color:darkslategray;
-  border:none;
-  background-color: #d0e0e3;
-  cursor: ;
-  caret-color: #d0e0e3;
-  outline-style: dotted;
-  outline-color: darkslategray;
-  outline-width: thin;
+  background-color: transparent;
+  border:hidden;
+  padding-bottom:3px;
 }
 
 .dropdown {
   position: static;
   display: inline-block;
-
 }
 
 .dropdown-content {
+  font-size:12pt;
   display: none;
   position: inherit;
-  right: 0px;
-  width:100%;
-  background-color: transparent;
-  min-width: 160px;
-  padding: 0px 0px;
   padding-left:10px;
-  z-index: 0;
 }
 
 .dropdown:hover .dropdown-content {
@@ -104,17 +86,11 @@ li{
 }
 
 a {
-  outline-style: dotted;
-  outline-color: darkslategray;
-  outline-width: thin;
 }
 
 a:link {
   color:darkslategray;
   text-decoration: none;
-  outline-style: dotted;
-  outline-color: darkslategray;
-  outline-width: thin;
 }
 
 a:visited {
@@ -127,7 +103,7 @@ a:hover {
   color:darkslategray;
   text-decoration: none;
   font-style:italic;
-  background-color: slategray;
+  background-color: #d0e0e3;;
 }
 
 .bio {
@@ -143,14 +119,13 @@ a:hover {
 
 .exh {
   position: absolute;
-  left:12vw;
-  right:12vw;
-  padding-top: 11vh;
+  top:1.5vh;
+  left:22vw;
+  padding-bottom:5vh;
   font-family: 'Lora', serif;
   color: darkslategray;
   font-size: 11pt;
   max-width: 90vw;
-  padding-bottom:30px;
 }
 
 
@@ -160,9 +135,12 @@ a:hover {
   color: darkslategray;
   font-size: 11pt;
   display: grid;
-  max-width: 90vw;
-  padding-top: 10vh;
-  padding-left:10vw; 
+  max-width: 90vw; 
+}
+
+.exhyear {
+  position: absolute;
+    left: -6ch;
 }
 
 .hover-title {
@@ -170,23 +148,6 @@ a:hover {
     pointer-events: auto;
     cursor: pointer;
 }
-
-::-webkit-scrollbar {
-    height: 10px;
-}
- 
-::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 10px rgba(44, 51, 82, 0.91); 
-    border-radius: 2px;
-    opacity:25%;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    -webkit-box-shadow: inset 0 0 6px rgba(44, 51, 82, 0.91); 
-    opacity:50%;
-}
-
 
 /* The Close Button */
 .close {
@@ -416,6 +377,34 @@ a:hover {
 .photocredit {
   padding-left:14vw;
   padding-top:1vh;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  cursor: pointer;
+  width: inherit;
+  color:darkslategray;
+  background-color: white;
+  border: none;
+  text-align: left;
+  left:-4vw;
+  outline: none;
+  font-size: 15px;
+  font-family: Lora;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #d0e0e3;
+  color:slategray;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  width: 50vw;
+  overflow: hidden;
 }
 
 

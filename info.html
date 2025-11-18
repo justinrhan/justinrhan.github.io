@@ -5,7 +5,8 @@
     <link rel="stylesheet" href="css/scrollandmodal.css">
     <title> Info</title>
       <div class="titleofpage">
-        <a href="index.html" style="border-bottom:solid 2px darkslategray">Justin Rui Han</a></div>
+        <a href="index.html"onmouseover="this.style.backgroundColor='slategray';this.style.color='#d0e0e3'";
+         onMouseOut="this.style.backgroundColor='#d0e0e3';this.style.color='darkslategray'">Justin Rui Han</a></div>
     <!-- addl stylesheets -->
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -36,7 +37,7 @@
             <li>2021-2 <a href="2021obj.html">Objects</a> /
                  <a href="2021dra.html">Drawings</a><br></li>
          <br>
-            <li><a href="exhibitions.html">Exhibitions</a> /
+           <li><a href="exhibitions.html">Exhibitions</a> /
               <a href="info.html">Info</a></li>
           </ul>
         </div>
@@ -48,6 +49,7 @@
     <!-- navigation menu -->
       <ul class="nav">
         <li>
+          <div style="color:darkslategray;font-size:12pt">Work</div><hr style="position:sticky;">
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2024-5</button>
             <div id="myDropdown" class="dropdown-content">
@@ -74,25 +76,37 @@
             </div>
           </div>
         </li>
-      <br>
+      <br><div style="position:fixed; bottom:6vh">
         <li>
-          <a href="exhibitions.html">Exhibitions</a>
+          <a style="font-size:12pt" href="exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="texts.html">Texts</a>
         </li>        
         <li>
-          <a href="info.html">Info</a>
-        </li>
+          <a style="font-size:12pt" href="info.html">Info</a>
+        </li></div>
       </ul>
 
     <!-- bio text -->
       <div class="exh">
-        Justin Rui Han<br>
-          b. 1999 <br>
-          Rochester, NY<br>
-          Presently based in Brooklyn, NY</p>
-        
-          2022<br>
-          BFA Painting, Rhode Island School of Design<br>
-          BA Archaeology, Brown University</p>
-        <p>Inquiries: rjustinhan@gmail.com</p><br>
+        <hr style="height:10px; visibility:hidden;"/>
+          <div style="position:absolute; left:-3.8vw; font-size: 11pt">Info
+          </div>
+        <br><hr style="height:0px; visibility:hidden;"/>
+            Justin Rui Han<br>b. 1999<br>
+            Works in Brooklyn, NY<br>
+            rjustinhan@gmail.com<br><br>
+
+            BFA Painting, Rhode Island School of Design<br>
+            BA Archaeology, Brown University (both 2022)<br><br><br>
+
+          <div style="position:absolute; left:-3.8vw; font-size: 11pt">Residencies
+          </div>
+        <br><hr style="height:0px; visibility:hidden;"/>
+           Sharpe-Walentas Studio Program (2024-5)<br>
+           The Here and There Collective Studio Grant (2023-4)<br>
+           Vermont Studio Center (2023)<br>        
+        </div>
       </div>
   </body>

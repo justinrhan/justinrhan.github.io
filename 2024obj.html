@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="css/scrollandmodal.css">
     <title>2024-5</title>
       <div class="titleofpage">
-        <a href="index.html" style="border-bottom:solid 2px darkslategray">Justin Rui Han</a></div>
+        <a href="index.html" 
+          onmouseover="this.style.backgroundColor='slategray';this.style.color='#d0e0e3'";
+          onMouseOut="this.style.backgroundColor='#d0e0e3';this.style.color='darkslategray'">Justin Rui Han</a></div>
     <!-- addl stylesheets -->
       <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
       <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -49,6 +51,7 @@
     <!-- navigation menu -->
       <ul class="nav">
         <li>
+          <div style="color:darkslategray;font-size:12pt">Work</div><hr style="position:sticky;">
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2024-5</button>
             <div id="myDropdown" class="dropdown-content">
@@ -75,68 +78,69 @@
             </div>
           </div>
         </li>
-      <br>
+      <br><div style="position:fixed; bottom:6vh">
         <li>
-          <a href="exhibitions.html">Exhibitions</a>
+          <a style="font-size:12pt" href="exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="texts.html">Texts</a>
         </li>        
         <li>
-          <a href="info.html">Info</a>
-        </li>
+          <a style="font-size:12pt" href="info.html">Info</a>
+        </li></div>
       </ul>
-
-
-<div class="container">
-  <div class="image-gallery">
-    <div class="row">
-       <div class="image-item">
-          <img src="Paintings/2025/01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
-       </div>
-       <div class="image-item">
-          <img src="Paintings/2025/02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
-       </div>
-       <div class="image-item">
-          <img src="Paintings/2024/1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
-       </div>
-       <div class="image-item">
-          <img src="Paintings/2024/2a.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
-       </div>
-       <div class="image-item">
-          <img src="Paintings/2024/2b.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>
-       </div>
-       <div class="image-item">
-          <img src="Paintings/2024/3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>
-       </div>
-       <div class="image-item">
-          <img src="Paintings/2024/3b.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
-       </div>
-    </div>
-  </div>
-  <div class="mobile-image-gallery">
-      <div class="mobile-image-item">
-        <img src="Paintings/2025/01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
+    <!-- image modal-->
+      <div class="container">
+        <div class="image-gallery">
+          <div class="row">
+             <div class="image-item">
+                <img src="Paintings/2025/01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
+             </div>
+             <div class="image-item">
+                <img src="Paintings/2025/02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+             </div>
+             <div class="image-item">
+                <img src="Paintings/2024/1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+             </div>
+             <div class="image-item">
+                <img src="Paintings/2024/2a.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+             </div>
+             <div class="image-item">
+                <img src="Paintings/2024/2b.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>
+             </div>
+             <div class="image-item">
+                <img src="Paintings/2024/3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>
+             </div>
+             <div class="image-item">
+                <img src="Paintings/2024/3b.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
+             </div>
+          </div>
+        </div>
+        <div class="mobile-image-gallery">
+            <div class="mobile-image-item">
+              <img src="Paintings/2025/01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
+            </div>
+            <div class="mobile-image-item">
+              <img src="Paintings/2025/02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+            </div>
+            <div class="mobile-image-item">
+              <img src="Paintings/2024/1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+            </div>
+            <div class="mobile-image-item">
+              <img src="Paintings/2024/2a.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+            </div>  
+            <div class="mobile-image-item">
+              <img src="Paintings/2024/2b.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>
+            </div>    
+            <div class="mobile-image-item">
+              <img src="Paintings/2024/3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>
+            </div>
+            <div class="mobile-image-item">
+              <img src="Paintings/2024/3b.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
+            </div>
+        </div>
       </div>
-      <div class="mobile-image-item">
-        <img src="Paintings/2025/02.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
-      </div>
-      <div class="mobile-image-item">
-        <img src="Paintings/2024/1.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
-      </div>
-      <div class="mobile-image-item">
-        <img src="Paintings/2024/2a.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
-      </div>  
-      <div class="mobile-image-item">
-        <img src="Paintings/2024/2b.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow"/>
-      </div>    
-      <div class="mobile-image-item">
-        <img src="Paintings/2024/3.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>
-      </div>
-      <div class="mobile-image-item">
-        <img src="Paintings/2024/3b.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow"/>
-      </div>
-  </div>
-</div>
-
-    <!-- image slideshow -->
+    <!-- modaltext+code-->
             <div id="myModal" class="modal">
               <span class="close cursor" onclick="closeModal()">&times;</span>
               <div class="modal-content">    

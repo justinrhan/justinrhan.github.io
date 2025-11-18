@@ -5,7 +5,9 @@
     <link rel="stylesheet" href="css/scrollandmodal.css">
     <title>Installation views</title>
       <div class="titleofpage">
-        <a href="index.html" style="border-bottom:solid 2px darkslategray">Justin Rui Han</a></div>
+        <a href="index.html" 
+          onmouseover="this.style.backgroundColor='slategray';this.style.color='#d0e0e3'";
+          onMouseOut="this.style.backgroundColor='#d0e0e3';this.style.color='darkslategray'">Justin Rui Han</a></div>
     <!-- addl stylesheets -->
         <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -48,6 +50,7 @@
     <!-- navigation menu -->
       <ul class="nav">
         <li>
+          <div style="color:darkslategray;font-size:12pt">Work</div><hr style="position:sticky;">
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2024-5</button>
             <div id="myDropdown" class="dropdown-content">
@@ -74,25 +77,27 @@
             </div>
           </div>
         </li>
-      <br>
+      <br><div style="position:fixed; bottom:6vh">
         <li>
-          <a href="exhibitions.html">Exhibitions</a>
+          <a style="font-size:12pt" href="exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="texts.html">Texts</a>
         </li>        
         <li>
-          <a href="info.html">Info</a>
-        </li>
+          <a style="font-size:12pt" href="info.html">Info</a>
+        </li></div>
       </ul>
-
-
-      <div class="exh" style="text-align: center">
+    <!-- exhibition images-->
+      <div class="exh" style="text-align: center; padding-top:6vh">
         <p><i>Under the Talking Tree</i>, <a href="https://kunsthaln.dk/en/udstilling/under-the-talking-tree-2/">Kunsthal N</a> (Copenhagen, DK)<br>
         March 01 – August 03 2025<br>
         Curated by Kathy Huang <br>
         Photographs by <a href="https://www.davidstjernholm.com/">David Stjernholm</a><br><br>
 
         With Sanié Bokhari, Kara Chin, Shyama Golden, Cole Lu, <br>Nina Molloy, Maya Seas, Manjari Sharma, Pauline Shaw,<br> Ding Shilun, Jia Sung, and Yongqi Tang <br><br></p>
-        
-          <div><img src="install/2025-kunsthaln/posterx.png" style="width:45vw"></div> 
+
+         <div><img src="install/2025-kunsthaln/posterx.png" style="width:45vw"></div> 
          <div><img src="install/2025-kunsthaln/01.jpg" style="width:45vw"></div>
          <div><img src="install/2025-kunsthaln/02.jpg" style="width:45vw"></div>
          <div><img src="install/2025-kunsthaln/03.jpg" style="width:45vw"></div>
@@ -106,5 +111,4 @@
          <div><img src="install/2025-kunsthaln/011.jpg" style="width:45vw"></div>
          <div><img src="install/2025-kunsthaln/012.jpg" style="width:45vw"></div>
       </div>
-      
   </body>
