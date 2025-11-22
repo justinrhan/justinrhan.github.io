@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/scrollandmodal.css">
+    <title>2024 / Objects</title>
+      <div class="titleofpage"><a href="../index.html">Justin Rui Han</a></div>
+    <!-- JS scripts -->
+      <script src="../js/main.js"></script><!--essential: this script opens the modal-->
+  </head>
+
+  <body>
+    <!-- mobile navigation -->
+      <nav>
+        <!--menu button-->
+            <input type="checkbox" id="menu-toggle">
+            <label class="menu-btn" for="menu-toggle" >
+              <span style="font-size: 16pt;">&#8597</span>
+              </label>
+        <!--menu contents-->
+            <div class="menu">
+              <!--blankrow-->
+                <a href="#" style="color:white">x</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              <!--blankrow-->
+                <a href="#" style="color:white">x</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              <!--first row-->
+                Work
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div style="text-align:right">About</div>
+              <!--second row-->
+                <a href="../main/workindex.html">&#8599Index</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/exhibitions.html" style="text-align:right">&#8599Exhibitions</a>
+              <!--third row-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/texts.html" style="text-align:right">&#8599Texts</a>
+              <!--fourth row-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/info.html" style="text-align:right">&#8599Info</a>
+              </div>
+      </nav>  
+    <!-- desktop navigation -->
+      <ul class="desknav">
+        <li>
+          <a href="../main/workindex.html" style="color:darkslategray;font-size:12pt">Work</a>
+            <hr style="opacity:50%; position:sticky;">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2024-5</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2024obj.html">Objects</a><br> 
+                <!--<a href="2024dra.html">Drawings</a>-->
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2023</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2023obj.html">Objects</a><br>
+                <a href="../galleries/2023dra.html">Drawings</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2021-2</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2021obj.html">Objects</a><br>
+                <a href="../galleries/2021dra.html">Drawings</a>
+            </div>
+          </div>
+        </li>
+      <br><div style="position:fixed; bottom:4vh">
+        <li>
+          <a style="font-size:12pt" href="../main/exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="../main/texts.html">Texts</a>
+        </li>        
+        <li>
+          <a style="font-size:12pt" href="../main/info.html">Info</a>
+        </li></div>
+      </ul>
+    <!-- main content -->
+      <div class="galleryspacer">
+        <div class="galcontainer">
+          <!--column 0-->
+            <img class="portrait" src="../images/Paintings/2025/03a.jpg" onclick="openModal();currentSlide(1)">
+            <img class="portrait" src="../images/Paintings/2025/03b.jpg" onclick="openModal();currentSlide(2)">
+            <div class="imgtext"><i>Palembang Canopy</i><br>Rattan, abaca, black walnut, plywood, pigment dye, machine-knit and hand-woven textile, hardware<br>68.5"x33.5"x3"</div>
+          <!--column 1-->
+            <img class="wideimg" src="../images/Paintings/2025/01.jpg" onclick="openModal();currentSlide(3)">
+            <div class="imgtext"><i>Monsoon Messenger (after Satyajit Ray)</i><br>Rattan, abaca, ash, plywood, pigment dye, various fibers, hardware<br>68.5"x33.5"x3"</div>
+          <!--column 2-->
+            <img class="wideimg" src="../images/Paintings/2025/02.jpg" onclick="openModal();currentSlide(4)">
+            <div class="imgtext"><i>Floating Beacon</i><br>(after Abd al-Rahman al-Sufi)</i><br>Rattan, abaca, plywood, pigment dye, various fibers, hardware<br>43"x49"x5"<br></div>
+          <!--column 3-->
+            <img class="wideimg" src="../images/Paintings/2024/1.jpg" onclick="openModal();currentSlide(5)">
+            <div class="imgtext"><i>Retracted Permissions</i><br>Gouache on linen over plywood panel, machine-knit textile<br>28"x50"x7"<br></div>
+          <!--column 4-->
+            <img class="tall" src="../images/Paintings/2024/2a.jpg" onclick="openModal();currentSlide(6)">
+            <img class="tall" src="../images/Paintings/2024/2b.jpg" onclick="openModal();currentSlide(7)">
+            <div class="imgtext"><i>Kégresse and Altimeter</i><br>Gouache and acrylic on cotton fabric mounted to wood, machine-knit textile, steel hardware<br>75"x34"x9"</div>
+          <!--column 5-->
+            <img class="wideimg" src="../images/Paintings/2024/3.jpg" onclick="openModal();currentSlide(8)">
+            <div class="imgtext"><i>Spindle and Trellis</i><br>acrylic and oil on canvas<br>12"x15"</div>
+          <!--column 6-->
+            <img class="wideimg" src="../images/Paintings/2024/3b.jpg" onclick="openModal();currentSlide(9)">
+            <div class="imgtext"><i>Intolerant Threader</i><br>oil on canvas<br>9"x9"</div>
+        </div>
+      </div>
+    <!-- modaltext/buttons-->
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">    
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="../images/Paintings/2025/03a.jpg" onclick="plusSlides(1)">
+                  <div class="text"><i>Palembang Canopy</i><br>Rattan, abaca, black walnut, plywood, pigment dye<br>machine-knit and hand-woven textile, hardware<br>verifydimensions<br>Photograph by Dustin Lin</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="../images/Paintings/2025/03b.jpg" onclick="plusSlides(1)">
+                  <div class="text"><i>Palembang Canopy</i><br>Rattan, abaca, black walnut, plywood, pigment dye<br> machine-knit and hand-woven textile, hardware<br>verifydimensions<br>Photograph by Dustin Lin</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="../images/Paintings/2025/01.jpg" onclick="plusSlides(1)">
+                  <div class="text"><i>Monsoon Messenger (after Satyajit Ray)</i><br>Rattan, abaca, ash, plywood, pigment dye, various fibers, hardware<br>68.5"x33.5"x3"<br>Photograph by Anders Sune Berg</div>
+              </div>
+              <div class="mySlides fade">
+                <img src="../images/Paintings/2025/02.jpg" onclick="plusSlides(1)">
+                  <div class="text"><i>Floating Beacon (after Abd al-Rahman al-Sufi)</i><br>Rattan, abaca, plywood, pigment dye, various fibers, hardware<br>43"x49"x5"<br>Photograph by Anders Sune Berg</div>
+              </div>
+               <div class="mySlides fade">
+                  <img src="../images/Paintings/2024/1.jpg" onclick="plusSlides(1)">
+                    <div class="text"><i>Retracted Permissions</i><br>Gouache on linen over plywood panel, machine-knit textile<br>28"x50"x7"</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="../images/Paintings/2024/2a.jpg" onclick="plusSlides(1)">
+                    <div class="text"><i>Kégresse and Altimeter</i><br>Gouache and acrylic on cotton fabric mounted to wood, machine-knit textile, steel hardware<br>75"x34"x9"</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="../images/Paintings/2024/2b.jpg" onclick="plusSlides(1)">
+                    <div class="text"><i>Kégresse and Altimeter</i><br>Gouache and acrylic on cotton fabric mounted to wood, machine-knit textile, steel hardware<br>75"x34"x9"</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="../images/Paintings/2024/3.jpg" onclick="plusSlides(1)">
+                    <div class="text"><i>Spindle and Trellis,</i> acrylic and oil on canvas, 12"x15"</div>
+                </div>
+                <div class="mySlides fade">
+                  <img src="../images/Paintings/2024/3b.jpg" onclick="plusSlides(1)">
+                    <div class="text"><i>Intolerant Threader,</i> oil on canvas, 9"x9"</div>
+                </div>
+                
+              
+                <div id="modalcount">
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                  <span class="dot" onclick="currentSlide(4)"></span>
+                  <span class="dot" onclick="currentSlide(5)"></span>
+                  <span class="dot" onclick="currentSlide(6)"></span>
+                  <span class="dot" onclick="currentSlide(7)"></span>
+                  <span class="dot" onclick="currentSlide(8)"></span>
+                  <span class="dot" onclick="currentSlide(9)"></span>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- modal script -->
+          <script> 
+                // When the user hits the esc key, close the modal
+                var modal = document.querySelector('.modal')
+                window.addEventListener('keydown', function (event) {
+                  if (event.key === 'Escape') {
+                    modal.style.display = 'none'
+                  }
+                })
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                } 
+
+                //script for arrow keys to move slideshow, linked to main.js; solution found @https://www.reddit.com/r/learnjavascript/comments/jsluet/use_left_right_keyboard_arrows_to_change_image_in/
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                      document.onkeydown = function(e) {
+                          e = e || window.event;
+                          if (e.keyCode == '37') {
+                              plusSlides(-1) //left <- show Prev image
+                          } else if (e.keyCode == '39') {
+                              // right -> show next image
+                              plusSlides(1)
+                          }
+                      }
+          </script>
+  </body>

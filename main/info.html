@@ -2,13 +2,11 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/scrollandmodal.css"><!-- relative links because page is in the root folder-->
-    <title>Justin Rui Han</title>
-      <div class="titleofpage"><a href="index.html">Justin Rui Han</a></div>
+    <link rel="stylesheet" href="../css/scrollandmodal.css">
+    <title>Info</title>
+      <div class="titleofpage"><a href="../index.html">Justin Rui Han</a></div>
     <!-- JS scripts -->
-      <script src="arrowscroll.js" defer></script>
-      <script src="scripts/main.js"></script>
-      <script src="js/css3-mediaqueries.min.js" type="text/javascript"></script>
+      <script src="../js/main.js"></script><!--essential: this script opens the modal-->
   </head>
 
   <body>
@@ -46,13 +44,13 @@
                 <a href="#"></a>
                 <div style="text-align:right">About</div>
               <!--second row-->
-                <a href="main/workindex.html">&#8599Index</a>
+                <a href="../main/workindex.html">&#8599Index</a>
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
-                <a href="main/exhibitions.html" style="text-align:right">&#8599Exhibitions</a>
+                <a href="../main/exhibitions.html" style="text-align:right">&#8599Exhibitions</a>
               <!--third row-->
                 <a href="#"></a>
                 <a href="#"></a>
@@ -60,7 +58,7 @@
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
-                <a href="main/texts.html" style="text-align:right">&#8599Texts</a>
+                <a href="../main/texts.html" style="text-align:right">&#8599Texts</a>
               <!--fourth row-->
                 <a href="#"></a>
                 <a href="#"></a>
@@ -68,18 +66,18 @@
                 <a href="#"></a>
                 <a href="#"></a>
                 <a href="#"></a>
-                <a href="main/info.html" style="text-align:right">&#8599Info</a>
+                <a href="../main/info.html" style="text-align:right">&#8599Info</a>
               </div>
       </nav>  
     <!-- desktop navigation -->
       <ul class="desknav">
         <li>
-          <a href="main/workindex.html" style="color:darkslategray;font-size:12pt">Work</a>
+          <a href="../main/workindex.html" style="color:darkslategray;font-size:12pt">Work</a>
             <hr style="opacity:50%; position:sticky;">
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2024-5</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="galleries/2024obj.html">Objects</a><br> 
+                <a href="../galleries/2024obj.html">Objects</a><br> 
                 <!--<a href="2024dra.html">Drawings</a>-->
             </div>
           </div>
@@ -88,8 +86,8 @@
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2023</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="galleries/2023obj.html">Objects</a><br>
-                <a href="galleries/2023dra.html">Drawings</a>
+                <a href="../galleries/2023obj.html">Objects</a><br>
+                <a href="../galleries/2023dra.html">Drawings</a>
             </div>
           </div>
         </li>
@@ -97,25 +95,37 @@
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">2021-2</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="galleries/2021obj.html">Objects</a><br>
-                <a href="galleries/2021dra.html">Drawings</a>
+                <a href="../galleries/2021obj.html">Objects</a><br>
+                <a href="../galleries/2021dra.html">Drawings</a>
             </div>
           </div>
         </li>
       <br><div style="position:fixed; bottom:4vh">
         <li>
-          <a style="font-size:12pt" href="main/exhibitions.html">Exhibitions</a>
+          <a style="font-size:12pt" href="../main/exhibitions.html">Exhibitions</a>
         </li>
         <li>
-          <a style="font-size:12pt" href="main/texts.html">Texts</a>
+          <a style="font-size:12pt" href="../main/texts.html">Texts</a>
         </li>        
         <li>
-          <a style="font-size:12pt" href="main/info.html">Info</a>
+          <a style="font-size:12pt" href="../main/info.html">Info</a>
         </li></div>
       </ul>
-    <!--central image-->
-      <div class="mainimage">
-        <img src="images/Paintings/2023/6.jpg" style="display: block; margin-left: auto; margin-right: 20vw;max-width:100%; max-height:95vh; height:auto; padding-top:10px;">        
-      </div>
+    <!-- bio text -->
+      <div class="exh" style="position:relative">
+        <div class="textcat">Info</div><br>
+          <hr style="height:0px; visibility:hidden;"/>
+            Justin Rui Han<br>b. 1999<br>
+            Works in Brooklyn, NY<br>
+            rjustinhan@gmail.com<br><br>
 
+            BFA Painting, Rhode Island School of Design<br>
+            BA Archaeology, Brown University (both 2022)<br><br><br>
+        <div class="textcat">Recipient of:</div>
+        <br><hr style="height:0px; visibility:hidden;"/>
+           Sharpe-Walentas Studio Program (2024-5)<br>
+           The Here and There Collective Studio Grant (2023-4)<br>
+           Vermont Studio Center Fellowship (2023)<br>        
+        </div>
+      </div>
   </body>

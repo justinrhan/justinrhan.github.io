@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/scrollandmodal.css">
+    <title>2021-2 / Drawings</title>
+      <div class="titleofpage"><a href="../index.html">Justin Rui Han</a></div>
+    <!-- JS scripts -->
+      <script src="../js/main.js"></script><!--essential: this script opens the modal-->
+  </head>
+
+  <body>
+    <!-- mobile navigation -->
+      <nav>
+        <!--menu button-->
+            <input type="checkbox" id="menu-toggle">
+            <label class="menu-btn" for="menu-toggle" >
+              <span style="font-size: 16pt;">&#8597</span>
+              </label>
+        <!--menu contents-->
+            <div class="menu">
+              <!--blankrow-->
+                <a href="#" style="color:white">x</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              <!--blankrow-->
+                <a href="#" style="color:white">x</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              <!--first row-->
+                Work
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div style="text-align:right">About</div>
+              <!--second row-->
+                <a href="../main/workindex.html">&#8599Index</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/exhibitions.html" style="text-align:right">&#8599Exhibitions</a>
+              <!--third row-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/texts.html" style="text-align:right">&#8599Texts</a>
+              <!--fourth row-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/info.html" style="text-align:right">&#8599Info</a>
+              </div>
+      </nav>  
+    <!-- desktop navigation -->
+      <ul class="desknav">
+        <li>
+          <a href="../main/workindex.html" style="color:darkslategray;font-size:12pt">Work</a>
+            <hr style="opacity:50%; position:sticky;">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2024-5</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2024obj.html">Objects</a><br> 
+                <!--<a href="2024dra.html">Drawings</a>-->
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2023</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2023obj.html">Objects</a><br>
+                <a href="../galleries/2023dra.html">Drawings</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2021-2</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2021obj.html">Objects</a><br>
+                <a href="../galleries/2021dra.html">Drawings</a>
+            </div>
+          </div>
+        </li>
+      <br><div style="position:fixed; bottom:4vh">
+        <li>
+          <a style="font-size:12pt" href="../main/exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="../main/texts.html">Texts</a>
+        </li>        
+        <li>
+          <a style="font-size:12pt" href="../main/info.html">Info</a>
+        </li></div>
+      </ul>
+    <!-- main content -->
+      <div class="galleryspacer">
+        <div class="galcontainer">
+          <!--column 1-->
+            <img class="wideimg1" src="../images/Drawings/2022/3.jpg" onclick="openModal();currentSlide(1)">
+            <div class="imgtext"><i>Patrolling</i><br>soft pastel and colored pencil on paper<br>24"x18"</div>
+          <!--column1.5-->
+            <img class="wideimg" src="../images/Drawings/2022/4.jpg" onclick="openModal();currentSlide(2)">
+            <div class="imgtext"><i>Prize-Fighters</i><br>soft pastel and colored pencil on paper<br>30"x22"</div>
+          <!--column 2-->
+            <img class="wideimg" src="../images/Drawings/2022/1.jpg" onclick="openModal();currentSlide(3)">
+            <div class="imgtext"><i>At Rest (Home Invasion)</i><br>graphite on paper<br>24"x24"<br></div>
+          <!--column 3-->
+            <img class="wideimg" src="../images/Drawings/2022/2.jpg" onclick="openModal();currentSlide(4)">
+            <div class="imgtext"><i>Yet Never Weary</i><br>graphite on paper<br>18"x18"<br></div>
+          <!--column 4-->
+            <img class="wideimg" src="../images/Drawings/2021/1.jpg" onclick="openModal();currentSlide(5)">
+            <div class="imgtext"><i>The Workshop of Islam Akhun</i><br>graphite on paper<br>16"x17"<br></div>
+          <!--column 5-->
+            <img class="wideimg" src="../images/Drawings/2021/2.jpg" onclick="openModal();currentSlide(6)">
+            <div class="imgtext"><i>Funeral Feast (For Lanzhou Artists' Army)</i><br>graphite on paper<br>24"x20<br></div>
+          <!--column 5-->
+            <img class="wideimg" src="../images/Drawings/2020/1.jpg" onclick="openModal();currentSlide(7)">
+            <div class="imgtext"><i>The Hull</i><br>graphite on paper<br>16"x19"<br></div>
+          <!--column 6-->
+            <img class="wideimg" src="../images/Drawings/2020/2.jpg" onclick="openModal();currentSlide(8)">
+            <div class="imgtext"><i>Namazu Fleeing a Foxhunt</i><br>graphite on paper<br>14"x20"<br></div>
+        </div>
+      </div>
+
+      <!-- modal slideshow -->
+        <div id="myModal" class="modal">
+          <span class="close cursor" onclick="closeModal()">&times;</span>
+          <div class="modal-content">    
+              <div class="slideshow-container">
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2022/3.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>Patrolling</i><br>soft pastel and colored pencil on paper<br>24"x18"</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2022/4.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>Prize-Fighters</i><br>soft pastel and colored pencil on paper<br>30"x22"</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2022/1.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>At Rest (Home Invasion)</i><br>graphite on paper<br>24"x24"</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2022/2.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>Yet Never Weary</i><br>graphite on paper<br>18"x18"</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2021/1.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>The Workshop of Islam Akhun</i><br>graphite on paper<br>16"x17</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2021/2.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>Funeral Feast (For Lanzhou Artists' Army)</i><br>graphite on paper<br>24"x20"</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2020/1.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>The Hull,</i><br>graphite on paper<br>16"x19"</div>
+                  </div>
+                  <div class="mySlides fade">
+                    <img src="../images/Drawings/2020/2.jpg" onclick="plusSlides(1)">
+                      <div class="text"><i>Namazu Fleeing a Foxhunt</i><br>graphite on paper<br>14"x20"</div>
+                  </div>
+                </div>
+                <div id="modalcount">  
+                  <div style="text-align:center; padding:5px; padding-bottom:0px;">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                    <span class="dot" onclick="currentSlide(7)"></span>
+                    <span class="dot" onclick="currentSlide(8)"></span>              
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    <!--modal script -->
+          <script> 
+                // When the user hits the esc key, close the modal
+                var modal = document.querySelector('.modal')
+                window.addEventListener('keydown', function (event) {
+                  if (event.key === 'Escape') {
+                    modal.style.display = 'none'
+                  }
+                })
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                } 
+
+                //script for arrow keys to move slideshow, linked to main.js; solution found @https://www.reddit.com/r/learnjavascript/comments/jsluet/use_left_right_keyboard_arrows_to_change_image_in/
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                      document.onkeydown = function(e) {
+                          e = e || window.event;
+                          if (e.keyCode == '37') {
+                              plusSlides(-1) //left <- show Prev image
+                          } else if (e.keyCode == '39') {
+                              // right -> show next image
+                              plusSlides(1)
+                          }
+                      }
+          </script>
+  </body>
+

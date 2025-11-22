@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/scrollandmodal.css">
+    <title>2023 / Objects</title>
+      <div class="titleofpage"><a href="../index.html">Justin Rui Han</a></div>
+    <!-- JS scripts -->
+      <script src="../js/main.js"></script><!--essential: this script opens the modal-->
+  </head>
+
+  <body>
+    <!-- mobile navigation -->
+      <nav>
+        <!--menu button-->
+            <input type="checkbox" id="menu-toggle">
+            <label class="menu-btn" for="menu-toggle" >
+              <span style="font-size: 16pt;">&#8597</span>
+              </label>
+        <!--menu contents-->
+            <div class="menu">
+              <!--blankrow-->
+                <a href="#" style="color:white">x</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              <!--blankrow-->
+                <a href="#" style="color:white">x</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+              <!--first row-->
+                Work
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <div style="text-align:right">About</div>
+              <!--second row-->
+                <a href="../main/workindex.html">&#8599Index</a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/exhibitions.html" style="text-align:right">&#8599Exhibitions</a>
+              <!--third row-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/texts.html" style="text-align:right">&#8599Texts</a>
+              <!--fourth row-->
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="../main/info.html" style="text-align:right">&#8599Info</a>
+              </div>
+      </nav>  
+    <!-- desktop navigation -->
+      <ul class="desknav">
+        <li>
+          <a href="../main/workindex.html" style="color:darkslategray;font-size:12pt">Work</a>
+            <hr style="opacity:50%; position:sticky;">
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2024-5</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2024obj.html">Objects</a><br> 
+                <!--<a href="2024dra.html">Drawings</a>-->
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2023</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2023obj.html">Objects</a><br>
+                <a href="../galleries/2023dra.html">Drawings</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">2021-2</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../galleries/2021obj.html">Objects</a><br>
+                <a href="../galleries/2021dra.html">Drawings</a>
+            </div>
+          </div>
+        </li>
+      <br><div style="position:fixed; bottom:4vh">
+        <li>
+          <a style="font-size:12pt" href="../main/exhibitions.html">Exhibitions</a>
+        </li>
+        <li>
+          <a style="font-size:12pt" href="../main/texts.html">Texts</a>
+        </li>        
+        <li>
+          <a style="font-size:12pt" href="../main/info.html">Info</a>
+        </li></div>
+      </ul>
+    <!-- vertical gallery -->
+      <div class="galleryspacer">
+        <div class="galcontainer">
+          <!--row-->
+            <img class="wideimg1" src="../images/Paintings/2023/1.jpg" onclick="openModal();currentSlide(1)">
+            <div class="imgtext"><i>Tsuchigumo's Playthings</i><br>oil on canvas<br>60"x54"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/2.jpg" onclick="openModal();currentSlide(2)">
+            <div class="imgtext"><i>Risk and Sanctuary</i><br>oil on canvas<br>50"x40"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/3.jpg" onclick="openModal();currentSlide(3)">
+            <div class="imgtext"><i>Stonecutter's Revisions</i><br>oil on canvas<br>56"x50"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/4.jpg" onclick="openModal();currentSlide(4)">
+            <div class="imgtext"><i>Attendant and Desecrators,</i> oil on canvas, 54"x72"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/5.jpg" onclick="openModal();currentSlide(5)">
+            <div class="imgtext"><i>Peddlers' Feud(A Breath of Wind Merits Release)</i><br>handmade papers, acrylic, and oil on canvas<br>48"x60"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/6.jpg" onclick="openModal();currentSlide(6)">
+            <div class="imgtext"><i>Occupational Hazards</i><br>acrylic and oil on canvas<br>60"x50"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/7.jpg" onclick="openModal();currentSlide(7)">
+            <div class="imgtext"><i>Shed with Contraband</i><br>oil on canvas<br>40"x30"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/8.jpg" onclick="openModal();currentSlide(8)">
+            <div class="imgtext"><i>Fishery and Semaphore at Day's End</i><br>oil on canvas<br>46"x30"</div>
+          <!--row-->
+            <img class="wideimg" src="../images/Paintings/2023/9.jpg" onclick="openModal();currentSlide(9)">
+            <div class="imgtext"><i>Rescued Fighters</i><br>oil on canvas<br>52"x44"</div>
+        </div>
+    <!-- modal-->
+            <div id="myModal" class="modal">
+              <span class="close cursor" onclick="closeModal()">×</span>
+              <div class="modal-content">    
+                  <div class="slideshow-container">
+                     <div class="mySlides fade" style="display: block;">
+                        <img src="../images/Paintings/2023/1.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Tsuchigumo's Playthings</i><br>oil on canvas<br>60"x54"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/2.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Risk and Sanctuary</i><br>oil on canvas<br>50"x40"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/3.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Stonecutter's Revisions</i><br>oil on canvas<br>56"x50"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/4.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Attendant and Desecrators</i><br>oil on canvas<br>54"x72"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/5.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Peddlers' Feud<br>(A Breath of Wind Merits Release)</i><br>handmade papers, acrylic, oil on canvas<br>48"x60"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/6.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Occupational Hazards</i><br>acrylic and oil on canvas<br>60"x50"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/7.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Shed with Contraband</i><br>oil on canvas<br>40"x30"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/8.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Fishery and Semaphore at Day's End</i><br>oil on canvas<br>46"x30"</div>
+                      </div>
+                      <div class="mySlides fade" style="display: none;">
+                        <img src="../images/Paintings/2023/9.jpg" onclick="plusSlides(1)">
+                          <div class="text"><i>Rescued Fighters</i><br>oil on canvas<br>52"x44"</div>
+                      </div>
+                      
+                    
+                      <div id="modalcount">
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                        <span class="dot" onclick="currentSlide(6)"></span>
+                        <span class="dot" onclick="currentSlide(7)"></span>
+                        <span class="dot" onclick="currentSlide(8)"></span>
+                        <span class="dot" onclick="currentSlide(9)"></span>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                      </div>
+                  </div>
+              </div>
+            </div>
+    <!-- menu script -->
+          <script>
+            function OpenOrClose() {
+            document.getElementById("mySidebar").classList.toggle("open");
+            document.getElementById("main").classList.toggle("open");}
+          </script>
+    <!-- modal script -->
+          <script> 
+                // When the user hits the esc key, close the modal
+                var modal = document.querySelector('.modal')
+                window.addEventListener('keydown', function (event) {
+                  if (event.key === 'Escape') {
+                    modal.style.display = 'none'
+                  }
+                })
+
+                // When the user clicks anywhere outside of the modal, close it
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                } 
+
+                //script for arrow keys to move slideshow, linked to main.js; solution found @https://www.reddit.com/r/learnjavascript/comments/jsluet/use_left_right_keyboard_arrows_to_change_image_in/
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                  }
+                      document.onkeydown = function(e) {
+                          e = e || window.event;
+                          if (e.keyCode == '37') {
+                              plusSlides(-1) //left <- show Prev image
+                          } else if (e.keyCode == '39') {
+                              // right -> show next image
+                              plusSlides(1)
+                          }
+                      }
+          </script>
+
