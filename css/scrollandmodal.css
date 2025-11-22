@@ -30,8 +30,9 @@
 
   @media screen and (max-width:1024px){
     .mainimage{
-    padding-top:5vh;
-  }
+      margin-top:20vh;
+      position:fixed;
+    }
   }
 /*DesktopSidebar*/
   .desknav {
@@ -219,9 +220,9 @@
   .galcontainer img{
     display: block;
     object-fit: contain;
-  pointer-events: auto;
-    cursor:nesw-resize;
+    pointer-events: auto;
     overflow:hidden;
+    cursor: url('data:image/png;base64,R0lGODlhFQAVAIAAAGOjoy0tNSH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFQAVAAACJYyPqcvtD2MClMpTwcV26y5phhiR3oZdpAlZbAuqFZq96I3nWwEAOw=='),auto;
   }
 
   .portrait{
@@ -416,12 +417,12 @@
 
   .mySlides {
    height:94vh;
-   cursor: url('data:image/png;base64,R0lGODlhFgAWAIAAAGmOjjAwNiH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFgAWAAACHYyPqcvtD6OctNoLrgEZc8aF4thRoaeV2sq27tsWADs='), auto;
   }
 
   .mySlides img{
     max-height:97vh; 
     max-width:100%;
+    cursor: url('data:image/png;base64,R0lGODlhFgAWAIAAAGmOjjAwNiH/C05FVFNDQVBFMi4wAwEAAAAh+QQEAAAAACwAAAAAFgAWAAACHYyPqcvtD6OctNoLrgEZc8aF4thRoaeV2sq27tsWADs='), auto;
   }
 
   .hover-title {
@@ -438,6 +439,7 @@
     right: 25px;
     font-size: 35px;
     font-weight: bold;
+    z-index:2;
   }
 
   .close:hover,
@@ -571,6 +573,17 @@
       left: -6ch;
   }
 
+  .exhyear img{
+    max-height:97vh;
+    max-width:70vw;
+    padding-bottom:5px;
+  }
+
+  .instimgs {
+    position: block;
+    left: -6ch;
+  }
+
   .textcat{
     position:absolute; 
     left:-4vw;
@@ -630,6 +643,12 @@
       position:relative;
       padding-top:0;
       left: 0ch;
+    }
+
+    .exhyear img{
+      max-height:97vh;
+      max-width:95vw;
+      padding-bottom:5px;
     }
 
     .textcat{
